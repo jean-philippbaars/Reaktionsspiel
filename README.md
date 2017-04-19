@@ -53,9 +53,13 @@ verursachte Spannungsschwankung zufälligen Startpunkt innerhalb dieser Zahl */
 
 void loop() {
   // put your main code here, to run repeatedly:
+unsigned long int Zufallszahl=random(5000);
+int switchvariable= Zufallszahl%4;
 
-Zufallszahl=random(5000);
-switch (Zufallszahl%4){
+switch (switchvariable){
   case 0: {digitalWrite(LED1,HIGH);
 }
-}
+case 1:{};
+case 2:{};
+case 3:{};
+}}
